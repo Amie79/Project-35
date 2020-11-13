@@ -14,7 +14,7 @@ function setup() {
   dog.addImage(dog_img);
   dog.scale=0.30;
   database=firebase.database();
-  foodStock=database.ref('Bottles of Milk');
+  foodStock=database.ref('Food');
   foodStock.on("value",readStock);
   bottles=20;
 }
